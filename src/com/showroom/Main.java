@@ -19,7 +19,7 @@ public class Main {
             System.out.println(" ");
             System.out.println("1. Display available cars");
             System.out.println("2. Add car");
-            System.out.println("3. Display available engines");
+            System.out.println("3. Display available brands");
             System.out.println("4. Find a car by plate number");
             System.out.println("5. Exit");
 
@@ -30,8 +30,8 @@ public class Main {
             switch (userChoice) {
                 case 1 -> showroom.displayCars();
                 case 2 -> showroom.addCar();
-                case 3 -> System.out.println("user chose 3 ");
-                case 4 -> System.out.println("user chose 4 ");
+                case 3 -> showroom.displayBrands();
+                case 4 -> showroom.displayCarsByPlateNumber();
                 case 5 -> shouldContinue = false;
             }
         }
