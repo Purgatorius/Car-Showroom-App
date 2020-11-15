@@ -9,6 +9,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean shouldContinue = true;
 
+        Showroom showroom = new Showroom();
+
         while(shouldContinue) {
             System.out.println(" ");
             System.out.println("---------------------------------------------------------------------------------------");
@@ -26,8 +28,8 @@ public class Main {
             int userChoice = scanner.nextInt();
 
             switch (userChoice) {
-                case 1 -> System.out.println("user chose 1 ");
-                case 2 -> System.out.println("user chose 2 ");
+                case 1 -> showroom.displayCars();
+                case 2 -> showroom.addCar();
                 case 3 -> System.out.println("user chose 3 ");
                 case 4 -> System.out.println("user chose 4 ");
                 case 5 -> shouldContinue = false;
